@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Onur</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="playground.html">Playground</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog-details">
+        <div class="post-header">
+            <div class="container">
+                <span class="date-badge cyan">Technology</span>
+                <h1>What is SCSS? Why Do I Use It?</h1>
+                <div class="meta-info">
+                    <span><i class="fa-regular fa-calendar"></i> Jan 20, 2026</span>
+                    <span><i class="fa-regular fa-clock"></i> 3 min read</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container post-body">
+            <img src="https://sass-lang.com/assets/img/logos/logo.svg" alt="Sass Logo" class="featured-image">
+
+            <p class="lead">
+                SCSS helps me write CSS faster. It solves the problem of repeating code and unmanageable files in large
+                projects. Here is why I prefer it over standard CSS.
+            </p>
+
+            <h2>Why Do We Need It?</h2>
+            <p>
+                CSS is essential for styling, but it lacks dynamic features. SCSS (Sassy CSS) adds "superpowers" to CSS
+                like variables, nesting, and mixins. It makes the code cleaner and more organized.
+            </p>
+
+            <h3>1. Variables</h3>
+            <p>
+                It lets me use variables. Instead of repeating the same hex color code 50 times, I define it once. If I
+                want to change the brand color, I change it in one place.
+            </p>
+
+            <div class="code-block">
+                <div class="code-header">SCSS Example</div>
+                <div class="code-content">
+                    <p>
+                        <span class="comment">// Define Variable</span><br>
+                        <span class="variable">$primary-color</span>: <span class="hex">#3498db</span>;<br>
+                        <br>
+                        <span class="comment">// Use Variable</span><br>
+                        <span class="selector">.btn</span> {<br>
+                        &nbsp;&nbsp; <span class="property">background-color</span>: <span
+                            class="variable">$primary-color</span>;<br>
+                        }
+                    </p>
+                </div>
+            </div>
+
+            <h3>2. Nesting</h3>
+            <p>
+                It lets me write styles inside other styles. This mimics the HTML structure and makes the stylesheet
+                much easier to read and maintain.
+            </p>
+
+            <div class="code-block">
+                <div class="code-header">SCSS Example</div>
+                <div class="code-content">
+                    <p>
+                        <span class="selector">.navbar</span> {<br>
+                        &nbsp;&nbsp; <span class="property">background</span>: <span class="hex">#333</span>;<br>
+                        <br>
+                        &nbsp;&nbsp; <span class="comment">// Nested element</span><br>
+                        &nbsp;&nbsp; <span class="selector">a</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="property">color</span>: white;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="property">text-decoration</span>: none;<br>
+                        &nbsp;&nbsp; }<br>
+                        }
+                    </p>
+                </div>
+            </div>
+
+            <blockquote>
+                "SCSS makes my projects easier, cleaner, and more scalable."
+            </blockquote>
+
+            <div class="post-footer">
+                <a href="index.html" class="btn-back">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Get In Touch</h2>
+                <p>For new projects, teamwork, or just to say hello.</p>
+
+                <div class="social-links">
+                    <a href="mailto:onura6673@gmail.com" class="social-btn" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/" target="_blank" class="social-btn" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 Onur. Built with HTML & SCSS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

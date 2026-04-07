@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blog Posts | Onur Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Onur</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="playground.html">Playground</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog" style="padding-top: 100px; min-height: 80vh;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h1 style="font-size: 3rem; color: #111827;">All Articles</h1>
+                <p style="color: #6b7280; font-size: 1.1rem;">My notes about technology and software.</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="card">
+                    <h3>What is SCSS? Why Do I Use It?</h3>
+                    <p>SCSS helps me write CSS faster. It lets me use variables and nesting.</p>
+                    <div class="card-footer blog-footer">
+                        <span class="date-badge cyan">Technology</span>
+                        <a href="blog-scss.html" class="read-more">Read <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>JavaScript: The Brain of the Web</h3>
+                    <p>JavaScript makes web pages active and allows DOM manipulation.</p>
+                    <div class="card-footer blog-footer">
+                        <span class="date-badge orange">Software</span>
+                        <a href="blog-js.html" class="read-more">Read <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>GitHub and Version Control</h3>
+                    <p>Tracking changes and collaborating using Git commands.</p>
+                    <div class="card-footer blog-footer">
+                        <span class="date-badge teal">Tools</span>
+                        <a href="blog-github.html" class="read-more">Read <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Get In Touch</h2>
+                <p>For new projects, teamwork, or just to say hello.</p>
+
+                <div class="social-links">
+                    <a href="mailto:onura6673@gmail.com" class="social-btn" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/" target="_blank" class="social-btn" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 Onur. Built with HTML & SCSS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

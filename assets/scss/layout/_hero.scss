@@ -1,0 +1,98 @@
+.hero {
+    padding: 80px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        // --- RESPONSIVE AYARLARI ---
+
+        @include tablet {
+            flex-direction: column-reverse;
+            gap: 30px;
+            padding-top: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+
+
+            h1 {
+                font-size: 3rem;
+                line-height: 1.2;
+                margin-bottom: 20px;
+                font-weight: 800; // Kalın font gradyanı daha iyi gösterir
+
+                .text-gradient {
+                    background: linear-gradient(to right, #bc13fe 0%, #00dbde 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: transparent;
+                    display: inline-block;
+                }
+
+                @include tablet {
+                    text-align: center;
+                }
+
+                .highlight {
+                    color: $color-primary;
+                    font-size: 0.7em;
+                    display: block;
+                }
+            }
+
+            .description {
+                font-size: 1.1rem;
+                color: $color-text;
+                margin-bottom: 30px;
+                max-width: 500px;
+
+                @include tablet {
+                    text-align: center;
+                }
+            }
+
+            .hero-buttons {
+                display: flex;
+                gap: 20px;
+
+                @include tablet {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .hero-image {
+            flex: 1;
+
+            img {
+                width: 100%;
+                max-width: 600px;
+                animation: float 3s ease-in-out infinite;
+            }
+
+            @include tablet {
+                width: 80%;
+                max-width: 400px;
+            }
+
+        }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

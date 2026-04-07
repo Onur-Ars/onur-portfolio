@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Onur</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="playground.html">Playground</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog-details">
+        <div class="post-header">
+            <div class="container">
+                <span class="date-badge teal">Tools</span>
+                <h1>GitHub and Version Control</h1>
+                <div class="meta-info">
+                    <span><i class="fa-regular fa-calendar"></i> Jan 25, 2026</span>
+                    <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container post-body">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png"
+                alt="GitHub Logo" class="featured-image" style="background-color: #ffffff;">
+
+            <p class="lead">
+                "My code was working 5 minutes ago!" We've all been there. Version control is the time machine for
+                developers.
+            </p>
+
+            <h2>Why Git?</h2>
+            <p>
+                Git allows you to track every change in your code. You can revert to previous versions, create branches
+                to test new features, and collaborate with others without overwriting their work.
+            </p>
+
+            <h3>Essential Commands</h3>
+            <p>
+                Here are the commands I use every day in my terminal.
+            </p>
+
+            <div class="code-block">
+                <div class="code-header">Terminal / Bash</div>
+                <div class="code-content">
+                    <p>
+                        <span class="comment"># 1. Start a new repository</span><br>
+                        <span class="variable">git</span> init<br>
+                        <br>
+                        <span class="comment"># 2. Stage changes</span><br>
+                        <span class="variable">git</span> add .<br>
+                        <br>
+                        <span class="comment"># 3. Save changes</span><br>
+                        <span class="variable">git</span> commit -m <span class="hex">"Initial commit"</span><br>
+                        <br>
+                        <span class="comment"># 4. Upload to GitHub</span><br>
+                        <span class="variable">git</span> push origin main
+                    </p>
+                </div>
+            </div>
+
+            <div class="post-footer">
+                <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Get In Touch</h2>
+                <p>For new projects, teamwork, or just to say hello.</p>
+
+                <div class="social-links">
+                    <a href="mailto:onura6673@gmail.com" class="social-btn" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/" target="_blank" class="social-btn" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 Onur. Built with HTML & SCSS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

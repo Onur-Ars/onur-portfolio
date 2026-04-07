@@ -1,0 +1,108 @@
+.contact-page {
+    padding: 80px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+
+    .container {
+        .contact-wrapper {
+            display: flex;
+            gap: 60px;
+            background-color: $color-white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+            @include tablet {
+                flex-direction: column;
+                padding: 30px;
+                gap: 40px;
+            }
+
+
+            .contact-info {
+                flex: 1;
+
+                h1 {
+                    font-size: 2.5rem;
+                    color: $color-dark;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    color: $color-text;
+                    margin-bottom: 40px;
+                }
+
+                .info-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                    color: $color-dark;
+
+                    i {
+                        font-size: 1.2rem;
+                        color: $color-primary;
+                        width: 40px;
+                        height: 40px;
+                        background-color: rgba($color-primary, 0.1);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .contact-form {
+                flex: 1.2;
+
+                .form-group {
+                    margin-bottom: 20px;
+
+                    label {
+                        display: block;
+                        margin-bottom: 8px;
+                        color: $color-dark;
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                    }
+
+                    input {
+                        width: 90%;
+                        padding: 12px 15px;
+                        border-radius: 8px;
+                        border: 2px solid #e5e7eb;
+                        font-family: $font-primary;
+                        font-size: 1rem;
+                        transition: all 0.3s ease;
+                        background-color: #f9fafb;
+
+                        &:focus {
+                            border-color: $color-primary;
+                            outline: none;
+                            background-color: $color-white;
+                        }
+                    }
+
+                    textarea {
+                        max-width: 400px;
+                        border: 1px solid #e5e7eb;
+                        max-height: 200px;
+                        padding: 10px;
+                        font-family: $font-primary;
+                        border-radius: 10px;
+                    }
+                }
+
+                .button {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

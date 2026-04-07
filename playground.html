@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blog Posts | Onur Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Onur</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="playground.html">Playground</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="pg-playground-container">
+        <div class="pg-intro">
+            <h1 class="pg-title">Brain exercise</h1>
+            <p class="pg-description">Match the cards and show your memory! You have 20 tries.</p>
+        </div>
+
+        <section class="pg-game-board" id="pg-game-board"></section>
+
+        <div class="pg-game-info">
+            <div id="pg-lives-display">Remaining tries: 20</div>
+            <button id="pg-reset-button">Restart</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Get In Touch</h2>
+                <p>For new projects, teamwork, or just to say hello.</p>
+
+                <div class="social-links">
+                    <a href="mailto:onura6673@gmail.com" class="social-btn" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/" target="_blank" class="social-btn" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 Onur. Built with HTML & SCSS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

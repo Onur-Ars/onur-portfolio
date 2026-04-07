@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">Onur</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="playground.html">Playground</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>
+          <span class="text-gradient">Hi, I’m Onur</span> <br />
+          <span class="highlight">Junior Front-End Developer</span>
+        </h1>
+
+        <p class="description">
+          I build clean and responsive web interfaces.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="playground.html" class="btn btn-primary">View Playground</a>
+          <a href="blog.html" class="btn btn-outline">Read Blog</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-2974925-2477356.png"
+          alt="Coding illustration" />
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="about-text">
+        I'm a junior front-end developer with a passion for creating
+        user-friendly and responsive websites. Currently learning and growing
+        in the world of web development.
+      </p>
+
+      <div class="badge-container">
+        <div class="badge">
+          <i class="fa-brands fa-html5" style="color: #e34f26"></i> HTML
+        </div>
+        <div class="badge">
+          <i class="fa-brands fa-css3-alt" style="color: #1572b6"></i> CSS
+        </div>
+        <div class="badge">
+          <i class="fa-brands fa-js" style="color: #f7df1e"></i> JavaScript
+        </div>
+        <div class="badge">
+          <i class="fa-brands fa-sass" style="color: #cc6699"></i> SCSS
+        </div>
+        <div class="badge">
+          <i class="fa-brands fa-git-alt" style="color: #f05032"></i> Git
+        </div>
+        <div class="badge"><i class="fa-brands fa-github"></i> GitHub</div>
+        <div class="badge">
+          <i class="fa-brands fa-react" style="color: #61dafb"></i> React
+          (Learning)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-grid">
+        <article class="card">
+          <h3>What is SCSS? Why Do I Use It?</h3>
+          <p>SCSS helps me write CSS faster.
+            It lets me use variables.
+            It lets me write styles inside other styles.
+            This makes my projects easier and cleaner.
+          </p>
+          <div class="card-footer blog-footer">
+            <span class="date-badge cyan">Technology</span>
+            <a href="blog-scss.html" class="read-more">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>JavaScript: The Brain of the Web</h3>
+          <p>JavaScript makes web pages active.
+            It adds life to static HTML pages.
+            I change the page with the DOM.
+            I manage dynamic content.
+          </p>
+          <div class="card-footer blog-footer">
+            <span class="date-badge orange">Software</span>
+            <a href="blog-js.html" class="read-more">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>GitHub and Version Control</h3>
+          <p>I use Git to save my projects.
+            I track changes in my code.
+            I use GitHub to share my work.
+            I start learning open source.
+          </p>
+          <div class="card-footer blog-footer">
+            <span class="date-badge teal">Tools</span>
+            <a href="blog-github.html" class="read-more">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <h2>Get In Touch</h2>
+        <p>For new projects, teamwork, or just to say hello.</p>
+
+        <div class="social-links">
+          <a href="mailto:onura6673@gmail.com" class="social-btn" aria-label="Email"><i
+              class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/" target="_blank" class="social-btn" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2026 Onur. Built with HTML & SCSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

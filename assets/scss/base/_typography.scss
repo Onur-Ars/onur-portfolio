@@ -1,0 +1,17 @@
+body {
+    font-family: $font-primary;
+    color: $color-text;
+    background-color: $color-light;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: $color-dark;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
